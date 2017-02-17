@@ -1,0 +1,50 @@
+[
+	{
+		"message": "How are things?",
+		"me": true,
+		"time": "2",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "Great! How about you? Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+		"me": false,
+		"time": "2",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "Fantastic!",
+		"me": true,
+		"time": "2",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "And how are you going",
+		"me": true,
+		"time": "2",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "We'll speak tomorrow?",
+		"me": true,
+		"time": "2",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "And how are you going",
+		"me": false,
+		"time": "1",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "I don't really know, I'm actually going to school",
+		"me": true,
+		"time": "0.5",
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"message": "Great! I'm going there too!",
+		"me": false,
+		"time": "0.4",
+		"picture": "/static/img/m-spore.png"
+	}
+]

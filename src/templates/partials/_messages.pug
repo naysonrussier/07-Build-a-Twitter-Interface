@@ -1,0 +1,26 @@
+li
+    h3
+      | Conversation with 
+      select(name="user" id="user_select" onchange="changeSelect(this)")
+        option(selected disabled hidden) --Choose somebody--
+        h3 great
+          each users in userList
+            if filter == users.id
+              option(selected value=users.id) #{users.name} - @#{users.screen_name}
+            else
+              option(value=users.id) #{users.name} - @#{users.screen_name}
+    ul.app--message--conversation
+      //list to create with for each
+      each message in messages
+        if message.me
+          li.app--message--me
+            .app--avatar(style='background-image: url('+message.sender.profile_image_url+')')
+              img(src=message.sender.profile_image_url)
+            p.app--message--text #{message.text}
+            p.app--message--timestamp #{message.time}
+        else
+          li.app--message
+            .app--avatar(style='background-image: url('+message.sender.profile_image_url+')')
+              img(src=message.sender.profile_image_url)
+            p.app--message--text #{message.text}
+            p.app--message--timestamp #{message.time}

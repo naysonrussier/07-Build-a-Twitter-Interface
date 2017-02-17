@@ -1,0 +1,44 @@
+[
+	{
+		"name": "Nayson Russer",
+		"avatar": "@naysrussier",
+		"follow": false,
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"name": "Delano",
+		"avatar": "@test",
+		"follow": true,
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"name": "Encore test",
+		"avatar": "@notest",
+		"follow": true,
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"name": "Nulilsmfioez",
+		"avatar": "@nuli",
+		"follow": true,
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"name": "Zazamimi",
+		"avatar": "@zazmim",
+		"follow": true,
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"name": "Nayson Russer",
+		"avatar": "@naysrussier",
+		"follow": false,
+		"picture": "/static/img/m-spore.png"
+	},
+	{
+		"name": "Nayson Russer",
+		"avatar": "@naysrussier",
+		"follow": false,
+		"picture": "/static/img/m-spore.png"
+	}
+]

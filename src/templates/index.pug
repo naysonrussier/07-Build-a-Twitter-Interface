@@ -1,0 +1,44 @@
+extends ./layout.pug
+block content
+
+	//Tweet new messages
+	.app--tweet
+		form(method="post" action="/")
+			.circle--fluid
+				.circle--fluid--cell.circle--fluid--primary.align-bottom.app--tweet--post
+					.app--avatar(style='background-image: url('+account.profile_image_url+')')
+						img(src=account.profile_image_url)
+					textarea#tweet-textarea.circle--textarea--input(placeholder="What's happening?" name="tweet")
+					strong#tweet-char.app--tweet--char 140
+				.circle--fluid--cell.align-bottom
+					button.button-primary.tweet-button Tweet
+					
+	//Body
+	.bounds.app--body
+		//Header of columns
+		.app--section--header
+			.grid-33
+				.app--section--heading
+					h2 Timeline
+			.grid-33
+				.app--section--heading
+					strong #{account.friends_count}
+					h2 Following
+			.grid-33
+				.app--section--heading
+					h2 Direct Messages
+		//Timeline
+		.grid-33
+			.app--section
+				ul.app--tweet--list
+					h3.loading Loading, please wait...
+		//Following
+		.grid-33
+			.app--section
+				ul.app--user--list
+					h3.loading Loading, please wait...
+		//Direct Message
+		.grid-33
+			.app--section
+				ul.app--message--list
+					h3.loading Loading, please wait...
