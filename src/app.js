@@ -31,9 +31,6 @@ var account;
 var errMessage;
 var port = 4567;
 
-var timeline = require(__dirname + '/mock/timeline.json');
-var message = require(__dirname + '/mock/message.json');
-var follow = require(__dirname + '/mock/following.json');
 var config = require(__dirname + '/config.js');
 var functions = require('./functions.js');
 
@@ -69,7 +66,7 @@ app.get('/', function(req, res){
 });
 
 app.get('/error', function(req, res) {
-  res.render('error', {error: errMessage})
+  res.render('error', {error: errMessage});
 });
   
 app.get('/timeline', function(req, res) {
